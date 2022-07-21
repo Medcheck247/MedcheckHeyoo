@@ -10,8 +10,8 @@ app = Flask(__name__)
 # Load .env file
 load_dotenv()
 
-messenger = WhatsApp(os.getenv("TOKEN"),phone_number_id='105582068896304')
-VERIFY_TOKEN = "HEROKUWHATSAPTOKEN"
+messenger = WhatsApp(os.getenv("heroku whatsapp token"),phone_number_id='105582068896304')
+VERIFY_TOKEN = "heroku whatsapp token"
 
 
 @app.route("/", methods=["GET", "POST"])
